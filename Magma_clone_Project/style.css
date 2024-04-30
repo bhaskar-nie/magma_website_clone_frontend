@@ -1,0 +1,573 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+  }
+  html,body {
+    height: 100%;
+    width: 100%;
+  }
+  @font-face {
+    font-family: 'a';
+    src: url('../Magma-main/jost-variable.ttf') format('truetype');
+  }
+
+  @font-face {
+      font-family: 'b';
+      src: url('../Magma-main/KFOlCnqEu92Fr1MmEU9fBBc4 (1).ttf') format('truetype');
+   }
+
+  @font-face {
+      font-family: 'c';
+      src: url('../Magma-main/KFOmCnqEu92Fr1Mu4mxK (1).ttf') format('truetype');
+   }
+
+  @font-face {
+    font-family: 'd';
+    src: url('../Magma-main/Jost-VariableFont_wght.ttf') format('truetype');
+ }
+
+  #main{
+    position: relative;
+    overflow: hidden;/*The overflow: hidden; CSS property is commonly used to control how content that overflows its containing element is handled.*/
+    background-color: #1137ca;  
+  }
+  #page1
+  {
+    height: 100vh;
+    width:100vw;
+    position: relative;
+  }
+  #page1>video
+  {
+    width: 100%;
+    height: 100%;/*100vh and 100vw are units used to define lengths relative to the viewport size.*/
+    object-fit: cover;/*object-fit: cover; */
+    /*is a CSS property used to specify how an image or video should be resized to fit its container while maintaining its aspect ratio.*/
+  }
+  #page1>nav
+  {
+    /*iss nav ke andar logo aur rightnav hain*/
+    display: flex;/*parent me, children ke horozontal dispalay ke liye */
+    align-items: center;
+    justify-content: space-between;/*isse logo and rightnav corners pe chale jayenge*/
+    padding: 0px 30px;
+    position:absolute;/*taaki ye background video se upar uthe, nhi to ye vodeo ke upar aayega, for better understanding comment this line*/
+    height: 10vh;
+    width: 100%;
+    /*background-color: yellow;*/
+    /*opacity: 0%;*/
+  }
+  #page1>nav>img{
+    /*logo ko refer kr rhe*/
+    margin-top: -3.5vw;
+    width: 9%;
+    border-radius: 5px;
+  }
+  #rightnav>button
+  {
+    padding: 10px 20px;
+    border-radius: 50px;
+    background-color: #0b48ed;
+    border: 1px solid white;
+    color: #fff;
+    font-family: 'a';
+    font-size: 15px;
+
+  }
+  .bottompage1{
+    position: absolute;
+    bottom: 15%;
+    left: 5%;
+    color: #fff;
+    height: 35vh;
+
+    width: 40vw;
+    /*background-color: yellow;*/
+  }
+  .bottompage1>h1
+  {
+    font-family: 'a';
+    font-size: 5vw;
+    font-weight: 25;
+    line-height: 1;
+    font-size: 50px;
+  }
+  #bottompage1part2
+  {
+    position:absolute;
+    bottom: 10%;
+    height: 35%;
+    width: 100%;/*covers 100 % of bottompage1's area, since usi ke andar nested hai*/
+    /*background-color: magenta;*/
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'a';
+    /*padding: 0px 30px;*/
+  }
+  #bottompage1part2>h4{
+    font-family: 'a';
+    font-size:1.3vw;
+    font-weight: 100;
+  }
+  #bottompage1part2>button{
+    font-family: 'a';
+    font-size:larger;
+    padding: 10px 20px;
+    border-radius: 30px;
+    background-color: #fff;
+    border: none;
+    color: #0b48ed;
+    font-family: 'b';
+    font-size: 15px;
+  }
+/*------------------------page 2 starts here*/
+#page2
+{
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;/*se h1 aur h4 ko columnwise rakh degi*/
+  font-family: 'a';
+  padding: 0vw 4vw;
+  height: 100vh;
+  width: 100vw;
+  /*background-color: red;*/
+  position: relative;
+  color: #fff;
+  background-color: #0a3cce;
+}
+#page2>h1/*paragraph wala*/{
+    font-family: 'd';
+    font-weight: 250;
+    line-height: 1.3;
+    width: 90%;
+    font-size: 4vw;
+  /*Equal Height: Setting line-height: 1; 
+  ensures that the height of each line of text within the element 
+  is the same as the font size of the text itself. 
+  This results in a consistent and compact appearance 
+  where each line of text is tightly spaced, 
+  with no extra vertical space between lines.*/
+  /*make the font light for the sliding effect*/
+  color: #dadada69;
+}
+#page2>h2{
+  margin-bottom: 3vw;/*h1 aur h2 ke beech ka gap badhayega, neeche wale area m*/
+
+  /*font-size: 4vw;*/
+  font-weight: 100;
+  
+}
+
+
+/*------------------------page 3 starts here*/
+#page3{
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  /*background-color: red;*/
+}
+#page3>canvas{
+  max-width: 100vw;
+  max-height: 100vh;
+  position: relative;
+}
+
+/*------------------------page 4 starts here*/
+#page4{
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  background-color: #1137ca;
+  /*similar to page2*/
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;/*se h1 aur h4 ko columnwise rakh degi*/
+  font-family: 'a';
+  color:#fff;
+}
+
+#page4>h3/*similar to page2>h2*/
+{
+  margin-bottom: 2vw;
+  font-weight: 100;
+  margin-left: 15vw;
+}
+#page4>h1
+{
+  margin-bottom: 3vw;
+  font-weight: 100;
+  margin-left: 15vw;
+  width:70%;
+  font-size: 3vw;
+  line-height: 1.3;
+  font-family: 'd';
+  font-weight: 250;
+  color: #ffffff81;
+}
+
+/*------------------------page 5 starts here*/
+#page5
+{
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  /*background-color: red;*/
+}
+#page5>canvas{ /*similar to page 3*/
+  max-width: 100vw;
+  max-height: 100vh;
+  position: relative;
+}
+
+/*------------------------page 6 starts here*/
+#page6
+{
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  /*background-color: #0a3cce;
+  /*similar to page2*/
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;/*se h1 aur h4 ko columnwise rakh degi*/
+  font-family: 'a';
+  color:#fff;
+}
+#page6>h3{
+  margin-bottom: 2vw;
+  font-weight: 100;
+  margin-left: 15vw;
+  margin-bottom: 2vw;
+  
+}
+
+#page6>h1{
+  font-size: 3vw;
+  margin-left: 15vw;
+  width: 70%;
+  font-family: 'd';
+  font-weight: 250;
+  color: #ffffff81;
+}
+/*------------------------page 7 starts here*/
+#page7
+{
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  background-color: #0a3cce;
+}
+#page7>canvas{ /*similar to page 3*/
+  max-width: 100vw;
+  max-height: 100vh;
+  position: relative;
+}
+/*.page7circle{
+  position: absolute; 
+  height: 20vw;
+  width: 20vw;
+  border-radius: 50%; 
+  top: 50%;
+  left: 50%; 
+  transform: translate(-50%,-50%); 
+  z-index: 9; 
+  border: 1px solid white;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} 
+.page7innercircle
+{
+  height: 70%;
+  width: 70%;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 1px solid #fff;
+} */
+
+
+/*------------------------page 8 starts here*/
+#page8
+{
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  background-color: #0a3cce;
+}
+#page8>video{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.page8bottom
+{
+  position: absolute;
+  bottom: 35%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  font-family: 'a';
+  
+}
+.page8bottom>h1{
+  color: #fff;
+  margin-bottom: 2vw;
+  font-size: 5vw;
+  font-weight: 100;
+}
+.page8bottom>button{
+  padding: 20px 30px;
+  border-radius: 50px;
+  border: none;
+  background-color: #fff;
+  color: #0a3cce;
+}
+
+/*------------------------page 9 starts here*/
+#page9
+{
+  display: flex;/*so that left9 and right9 bagal bagal dikhe*/
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  background-color: #0a3cce;
+  color: #fff;
+}
+.left9{
+  height: 100%;
+  width: 35%;
+  /*background-color: red;*/
+  position: relative;
+  font-family: 'd';
+}
+.right9{
+  height: 100%;
+  width: 65%;
+  /*background-color: magenta;*/
+  position: relative;
+}
+.left9>h1{
+  top:50%;
+  right: 10%;
+  transform: translateY(-50%);
+  /*background-color: red;*/
+  position: absolute;
+  font-size: 100px;
+  font-weight: 275;
+  line-height: 1;
+}
+.right9center{
+  height: 60%;
+  width: 75%;
+  border-radius: 10px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);/*above two lines to bring it to center*/
+  background-image: url(https://thisismagma.com/wp-content/uploads/2023/04/magma.wp2.cubdev.com-home-1.jpeg);
+  background-size: cover;
+  left: 5%;
+}
+
+/*------------------------page 10 starts here*/
+#page10
+{
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  background-color: #0a3cce;
+  color: #fff;
+}
+.right10
+{
+  position: relative;
+  height: 100%;
+  width: 60%;
+  left:38%;
+  /*background-color: maroon;*/
+}
+.right10inner
+{
+  height: 33.33%;/*since 3 divs of same class*/
+  width: 100%;
+  /*background-color: magenta;*/
+  font-family: 'a';
+  color:#fff;
+
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  justify-content: start;
+}
+.right10inner>h1{
+  font-size: 2vw;
+}
+.right10inner>p{
+  margin-top: 2vw;
+  font-size: 1.3vw;
+  width: 80%;
+  font-family: 'd';
+  font-weight: 300;
+  
+}
+
+/*------------------------page 11 starts here*/
+#page11
+{
+  position: relative;
+  height: 110vh;
+  width: 100vw;
+  background-color: #fff;
+}
+#page11>h1{
+  top: 5%;
+  left: 10%;
+  position: absolute;
+  font-size: 4vw;
+  color:#000;
+  font-family: 'a';
+  font-weight: 100;
+}
+.page11inner
+{
+  display: flex;/*so that left 11 and right 11 occur sidewise*/
+  top: 18%;
+  position: relative;
+  margin-bottom: 2vw;
+  height: 24%;
+  width: 100%;
+  /*background-color: green;*/
+  
+}
+.left11{
+  position: relative;
+  height: 100%;
+  width: 40%;
+  left: 5%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.left11>img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.right11{
+  padding-top: 5vw;
+  color: #000;
+  left: 50%;
+  position: absolute;
+  height: 100%;
+  width: 50%;
+}
+.right11>h4{
+  font-weight: 100;
+  font-family: 'a';
+}
+.right11>h1{
+  font-size: 2vw;
+  font-family: 'd';
+}
+
+/*------------------------page 12 starts here
+#page12
+{
+  position: relative;
+  height: 110vh;
+  width: 100vw;
+  background-color: #02268e;
+  color: #fff;
+}
+.page12inner{
+  position: absolute;
+  top:40%;
+  right:10%;
+  font-family: 'a';
+}
+.page12inner>h1{
+  font-size: 5vw;
+  font-weight: 100;
+}
+.page12inner>p{
+  font-size: 2vw;
+  font-family: 'd';
+  font-weight: 250;
+}*/
+
+/*------------------------page 13 starts here*/
+#page13
+{
+  position: relative;
+  height: 60vh;
+  width: 100vw;
+  background-color: #000;
+  color: #fff;
+  font-family: 'a';
+  padding: 7vw 10vw;
+}
+#page13>h1{
+  position: relative;
+  font-size: 5vw;
+  line-height: 1;
+  font-weight: 100;
+}
+#page13>button{
+  padding: 20px 30px;
+  border-radius: 50px;
+  border: none;
+  color: #fff;
+  background-color: #0a3cce;
+  margin-top: 4vw;
+}
+
+/*------------------------page 14 starts here*/
+#page14{
+  position: relative;
+  height: 60vh;
+  width: 100vw;
+  background-color: #000;
+}
+.page14inner{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;/*for h1 and i to go towards corners*/
+  padding: 0vw 5vw;
+  font-family: a;
+  height: 33.3%;
+  width: 100%;
+  color: #fff;
+  border-top: .5px solid #ffffff5c;
+  border-bottom: .5px solid #ffffff48;
+}
+.page14inner>i{
+  font-weight: 100;
+  font-size: 2.4vw;
+  position: relative;
+  z-index: 9999; // to diaplay on top
+}
+.page14inner>h1{
+  font-size: 3vw;
+  font-weight: 100;
+  position: relative;
+  z-index: 9999;
+}
+.center14{
+  height: 0%;/*initially*/
+  width: 100%;
+  background-color: #0a3cce;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  transition: all ease .5s;
+}
+.page14inner:hover .center14{
+  height: 100%;/*hover karne par heught 100%*/
+}

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+<!--paste locomotive css link inside the head tag(internal css)-->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="main">
+        <!--it is our wrapper div, isike andar apna saara content rahega -->
+        <div data-scroll data-scroll-speed="-5" id="page1">
+            <!--The `data-scroll` attribute, along with its associated values like `data-scroll-speed`, 
+            is used to apply scroll-based effects to elements using locomotive scroll, a JavaScript library for smooth scrolling. 
+            In this specific case, `data-scroll` is likely used to indicate to locomotive scroll that the element with the `id="page1"` 
+            should respond to scroll events, and the `data-scroll-speed="-5"` attribute adjusts the speed at which the element moves 
+            in response to scrolling. 
+            The negative value (-5 in this case) likely indicates that the element moves in the opposite direction of the scroll. 
+            This setup allows developers to create dynamic scrolling effects, such as parallax scrolling, 
+            where elements move at different speeds relative to the scroll position, enhancing the visual experience of the webpage.-->
+
+
+            <!--create a nav bar on the top-->
+            <nav>
+                <img src="../Magma-main/Screenshot 2023-05-30 220719.png" alt="Logo">
+                <!--nav ke andar div, jisme buttons hain-->
+                <div id="rightnav">
+                    <button>Request a Demo</button>
+                    <button><i class="ri-menu-search-fill"></i></button>
+                </div>
+            </nav>
+            <!--page1 me hi 2 parts the, peeche video, uske above upar me navbar, neeche h1-->
+            <div class="bottompage1"><!--yahan class hai-->
+                <h1>Experience Real <br>Estate Agility</h1>
+                <div id="bottompage1part2">
+                    <h4>Create a digital twin of your existing building<br>and realise the potential of Web3.</h4>
+                    <button>Learn More</button>
+                </div>
+            </div>
+            <video src="https://thisismagma.com/wp-content/themes/magma/assets/home/hero/1.mp4?2" autoplay loop muted ></video>
+        </div><!--page1 ends here-->
+
+        <!--Page 2: Some observations-->
+        <!--Page 2 jaldi scroll ho rha=>use locomotive, and gsap cdn provides smooth transitions-->
+        <div id="page2">
+            <!--Here the paragraph text display is faded, and turns white on further scrolling-->
+            <h2>CERTIFY YOUR BUILDING AS A DIGITAL TWIN TOKEN (DTT)</h2>
+            <h1>The Digital Twin Token is a unique digital asset backed by property data. Magma combines your building’s components and systems essential information into a DTT.
+            </h1>
+            <!--no need foer extra div, since page 2 contains text only-->
+        </div><!--page 2 completes here-->
+
+        <div id="page3">
+            <!--page3 will use canvas-->
+            <canvas>
+            </canvas>
+        </div><!--page 3 completes here-->
+
+        <div id="page4">
+            <h3>CONNECT THE BUILDING'S TWIN TO YOUR STAKEHOLDERS</h3>
+            <h1 id="2ndpara">Users connect directly to the DTT without any intermediaries. As Stakeholder, they have the power to upload and verify information that enriches the Digital Twin Token. A Stakeholder's ability to access validated-data to perform tasks depends on their specific role.</h1>
+        </div><!--page 4 completes here-->
+
+        <div id="page5">
+            <!--page 5 contains canvas only-->
+            <canvas></canvas>
+        </div><!--page 5 completes here-->
+
+        <div data-scroll data-scroll-speed="-5" id="page6">
+            <h3 id="3rdpara">INCREASE YOUR DIGITAL TWIN TOKEN’S VALUE</h3>
+            <h1>DTT data increases the value of your digital asset by lowering operational costs, improving energy use, assisting commercialization, and boosting the liquidity of your building.</h1>       
+        </div><!--page 6 completes here-->
+
+        <div id="page7">
+            <!-- <div class="page7circle">
+                <div class="page7innercircle">
+        
+                </div>
+            </div> -->
+            <canvas></canvas>
+        </div><!--page 7 completes here-->
+        
+
+        <div  id="page8">
+            <div class="page8bottom">
+                <h1>Magma DTT</h1>
+                <button>LEARN MORE</button>
+            </div>
+            <video src="https://thisismagma.com/wp-content/themes/magma/assets/home/glass/1.webm?2"autoplay loop muted></video>
+        </div><!--page 8 completes here-->
+
+        <div id="page9">
+            <div class="left9">
+                <h1>What is <br> Magma?</h1>
+            </div>
+            <div class="right9">
+                <div class="right9center">
+                </div>
+            </div>
+
+        </div><!--page 9 completes here-->
+
+        <div id="page10">
+            <!--isme bas right div hoga, jiske andar 3 chhote divs rahenge-->
+            <div class="right10">
+                <div class="right10inner">
+                    <h1>Web3 platform
+                    </h1>
+                    <p>Magma is a Web3 platform for all real estate stakeholders, which provides users with the ability to manage interactions between physical and digital assets through unique, and collectively generated, 3D representations of their buildings.</p>
+                </div>
+                <div class="right10inner">
+                    <h1>The Digital Twin Token: The building’s unique digital copy</h1>
+                    <p>Magma uses blockchain technology to record essential data, which enables transparent, traceable, and immutable streams of information to be readily accessible to its users. Magma smart contracts are built with this blockchain data to expedite tasks like requests for proposals, lease agreements, and services arrangements.</p>
+                </div>
+                <div class="right10inner">
+                    <h1>An Index of digitization</h1>
+                    <p>The Magma Index provides valuable insight for decision-making regarding data-sharing, service-creating, and operational/environmental expectations.</p>
+                </div>
+            </div>
+        </div><!--page 10 completes here-->
+
+        <div id="page11">
+            <h1>Recent Blog</h1>
+            <div class="page11inner">
+                <div class="left11">
+                    <img src="https://thisismagma.com/wp-content/uploads/2023/05/thisismagma.com-magma-a-la-3eme-edition-du-tech-talk-de-cbre-france-1684942208038.jpeg" alt="">
+                </div>
+                <div class="right11">
+                    <h4>APRIL 28, 2024</h4>
+                    <h1>Magma At CBRE France's 3rd Tech Talk</h1>
+
+                </div>
+            </div>
+            <div class="page11inner">
+                <div class="left11">
+                    <img src="https://thisismagma.com/wp-content/uploads/2023/05/thisismagma.com-workshop-blockchain-et-actif-digitaux-sba-16-min-scaled.jpg" alt="">
+                </div>
+                <div class="right11">
+                    <h4>APRIL 28, 2024</h4>
+                    <h1>Magma At CBRE Spain's 3rd Tech Talk</h1>
+
+                </div>
+            </div>
+            <div class="page11inner">
+                <div class="left11">
+                    <img src="https://thisismagma.com/wp-content/uploads/2023/03/magma.wp2.cubdev.com-exploring-the-potential-of-real-estate-tokenization-digital-twins-magma.png" alt="">
+                </div>
+                <div class="right11">
+                    <h4>APRIL 28, 2024</h4>
+                    <h1>Magma At CBRE America's 3rd Tech Talk</h1>
+
+                </div>
+            </div>
+          
+        </div><!--page 11 completes here-->
+
+        <!--<div id="page12">
+            <div class="page12inner">
+                <h1>Featured In</h1>
+                <p>Thrilled to have been featured in several prominent media <br> outlets and leading professionals across the world’s best <br> real estate and web3 institutions.</p>
+            </div>
+        </div>page 12 completes here-->
+
+        <div id="page13">
+            <h1>Become an<br>early adopter</h1>
+            <button>BOOK A DEMO</button>
+        </div><!--page 13 completes here-->
+
+        <div id="page14">
+            <div class="page14inner">
+                <h1>Twitter</h1>
+                <i class="ri-arrow-right-up-line"></i>
+                <div class="center14"></div>
+            </div>
+            <div class="page14inner">
+                <h1>LinkedIn</h1>
+                <i class="ri-arrow-right-up-line"></i>
+                <div class="center14"></div>
+
+            </div>
+            <div class="page14inner">
+                <h1>Instagram</h1>
+                <i class="ri-arrow-right-up-line"></i>
+                <div class="center14"></div>
+
+            </div>
+        </div>
+
+        </div>
+    </div>
+    <!--gsap cdn etc are script tags(js), paste here only-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!--below is the scroll trigger script, go to gsap cdn and fetch whatever required, here scroll trigger is requires-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!--below is the locomotive js cdn(scroll wala only), note that locomotive requires both css and js part, fetch both-->
+    <!--paste locomotive css link inside the head tag(internal css)-->
+    <!--locomotive js here-->
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+
+    <!--Also, locomotive aur scroll trigger ko saath ,e chalane ke liye hame kuch code ki jrirat padti hai-->
+    <!--google search for locomotive scrolltrigger codepen, go to js part and copy it and paste it to js here-->
+    <script src="script.js"></script>
+</body>
+</html>
